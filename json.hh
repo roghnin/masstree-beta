@@ -21,6 +21,11 @@
 #include <vector>
 #include <utility>
 #include <stdlib.h>
+
+#if __GNUC__ >= 9
+#pragma GCC diagnostic ignored "-Wclass-memaccess"
+#endif
+
 namespace lcdf {
 
 template <typename P> class Json_proxy_base;

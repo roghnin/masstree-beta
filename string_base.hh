@@ -22,6 +22,11 @@
 #include <limits.h>
 #include <ctype.h>
 #include <iostream>
+
+#if __GNUC__ >= 9
+#pragma GCC diagnostic ignored "-Wformat-truncation"
+#endif
+
 namespace lcdf {
 class StringAccum;
 #define LCDF_CONSTANT_CSTR(cstr) ((cstr) && __builtin_constant_p(strlen((cstr))))

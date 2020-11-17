@@ -18,6 +18,10 @@
 #include "compiler.hh"
 #include "string_slice.hh"
 
+#if __GNUC__ >= 9
+#pragma GCC diagnostic ignored "-Wclass-memaccess"
+#endif
+
 /** @brief String collection used for Masstree key suffixes.
 
     A stringbag is a compact collection of up to W strings, where W is a

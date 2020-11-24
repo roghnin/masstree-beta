@@ -32,6 +32,8 @@ namespace Masstree {
     Masstree. However, <code>k.shift()</code> is faster than the assignment,
     and its effects can be undone by the <code>k.unshift_all()</code>
     method. */
+
+// Hs: this class may contain payloads for Montage.
 template <typename I>
 class key {
   public:

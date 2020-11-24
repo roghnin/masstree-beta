@@ -206,6 +206,7 @@ class internode : public node_base<P> {
     template <typename PP> friend class tcursor;
 };
 
+// Hs: perhaps this class should be/contain payload for Montage.
 template <typename P>
 class leafvalue {
   public:
